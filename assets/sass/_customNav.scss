@@ -1,0 +1,23 @@
+@media (min-width: 992px) {
+    .custom-navbar {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50px ; 
+        backdrop-filter: blur(10px);
+        z-index: 1000; 
+        width: auto; 
+        margin: 10px auto; 
+        background: rgb(9, 38, 53, 0.4); 
+    
+        .nav-link, .active {
+            font-size: 1.5em;
+            margin: 0 6%;
+            color: #cdeee2 !important;
+        }
+    }
+}
+
+
+
