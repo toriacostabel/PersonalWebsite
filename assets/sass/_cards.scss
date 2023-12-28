@@ -1,0 +1,41 @@
+.cards-index {
+
+    .card {
+        background-color: #1b4242;
+        border-radius: 25px;
+
+        .card-img{
+            width: 88%;
+            margin: 6%;
+            border-radius: 20px;
+        }
+        
+        .card-body {
+            margin: 0 0 0 10px;
+
+            .card-title{
+                font-size: 1.6em;
+                margin-bottom: 25px;
+                color: white;
+            }
+            
+            .card-tags {
+                display: flex;
+                
+                p {
+                    font-size: 0.8em;
+                    margin-right: 10px;
+                    background-color: #cdeee2;
+                    padding: 5px 12px;
+                    border-radius: 15px;
+
+                    &:hover{
+                        color: white;
+                        background-color: #1b4242;
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

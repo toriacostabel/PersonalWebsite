@@ -1,13 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-  background: rgb(255, 221, 204);
-  background: linear-gradient(90deg, rgb(158, 200, 185) 0%, rgb(92, 131, 116) 55%, rgb(27, 66, 66) 100%);
-}
+  font-family: 'Poppins', sans-serif;
+  background: #92bfaf;
+  background: linear-gradient(140deg, #92bfaf 0%, #4c7a69 55%, #1b4242 100%); }
 
 @media (min-width: 992px) {
   .custom-navbar {
@@ -16,16 +15,141 @@ body {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50px;
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     z-index: 1000;
     width: auto;
-    margin: 10px auto;
-    background: rgba(9, 38, 53, 0.4);
-  }
-  .custom-navbar .nav-link, .custom-navbar .active {
-    font-size: 1.5em;
-    margin: 0 6%;
-    color: #cdeee2 !important;
-  }
-}/*# sourceMappingURL=style.css.map */
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px 1px rgba(9, 38, 53, 0.15); }
+    .custom-navbar .navbar-nav {
+      display: flex;
+      justify-content: space-around; }
+      .custom-navbar .navbar-nav .nav-item {
+        font-size: 1.5em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        margin: 0 0.5em; }
+        .custom-navbar .navbar-nav .nav-item .nav-link, .custom-navbar .navbar-nav .nav-item .active {
+          color: #092635 !important; } }
+
+.header {
+  font-family: 'SonderRegular', serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 9rem 0 5rem;
+  flex-direction: column; }
+  .header h1 {
+    color: white;
+    padding: 2%;
+    font-size: 9em; }
+  .header h3 {
+    margin-top: -1%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 1.5em; }
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 100;
+  font-style: normal;
+  src: url("../font/Poppins/Poppins-Thin.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 200;
+  font-style: normal;
+  src: url("../font/Poppins/Poppins-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../font/Poppins/Poppins-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../font/Poppins/Poppins-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../font/Poppins/Poppins-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-style: normal;
+  src: url("../font/Poppins/Poppins-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../font/Poppins/Poppins-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-style: normal;
+  src: url("../font/Poppins/Poppins-ExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 900;
+  font-style: normal;
+  src: url("../font/Poppins/Poppins-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'SonderRegular';
+  src: url("../font/sonder-regular-free-font/SonderRegular/SonderRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+.cards-index .card {
+  background-color: #1b4242;
+  border-radius: 25px; }
+  .cards-index .card .card-img {
+    width: 88%;
+    margin: 6%;
+    border-radius: 20px; }
+  .cards-index .card .card-body {
+    margin: 0 0 0 10px; }
+    .cards-index .card .card-body .card-title {
+      font-size: 1.6em;
+      margin-bottom: 25px;
+      color: white; }
+    .cards-index .card .card-body .card-tags {
+      display: flex; }
+      .cards-index .card .card-body .card-tags p {
+        font-size: 0.8em;
+        margin-right: 10px;
+        background-color: #cdeee2;
+        padding: 5px 12px;
+        border-radius: 15px; }
+        .cards-index .card .card-body .card-tags p:hover {
+          color: white;
+          background-color: #1b4242;
+          transition: all 0.2s ease-in-out; }
+
+.main .line-x {
+  width: 80%;
+  background-color: white;
+  height: 2px;
+  margin: 100px auto; }
+
+.main h2 {
+  text-align: center;
+  margin: 1.8em 0 1em;
+  font-size: 3em;
+  font-family: 'sonderregular', sans-serif;
+  color: white; }
+
+.footer-index {
+  margin: 100px auto; }

@@ -6,8 +6,14 @@
 }
 
 body {
-    background: rgb(255,221,204);
-    background: linear-gradient(90deg, rgba(158,200,185,1) 0%, rgba(92,131,116,1) 55%, rgba(27,66,66,1) 100%);
+    font-family: 'Poppins', sans-serif;
+    background: rgb(146,191,175);
+    background: linear-gradient(140deg, rgba(146,191,175,1) 0%, rgba(76,122,105,1) 55%, rgba(27,66,66,1) 100%);
 }
 
 @import 'customNav';
+@import 'header';
+@import 'fonts';
+@import 'cards';
+@import 'main';
+@import 'footer';

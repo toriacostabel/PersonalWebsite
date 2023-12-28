@@ -5,17 +5,29 @@
         left: 50%;
         transform: translateX(-50%);
         border-radius: 50px ; 
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(15px);
         z-index: 1000; 
         width: auto; 
-        margin: 10px auto; 
-        background: rgb(9, 38, 53, 0.4); 
+        margin: 20px auto; 
+        background: rgba(255, 255, 255, 0.3); 
+        box-shadow: 0 0 10px 1px rgba(9, 38, 53, 0.15);
     
-        .nav-link, .active {
-            font-size: 1.5em;
-            margin: 0 6%;
-            color: #cdeee2 !important;
+        .navbar-nav{
+            display: flex;
+            justify-content: space-around;
+
+            .nav-item {
+                font-size: 1.5em;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                margin: 0 0.5em;
+
+                .nav-link, .active {
+                    color: rgb(9, 38, 53) !important;
+                }
+            }
         }
+        
     }
 }
 
