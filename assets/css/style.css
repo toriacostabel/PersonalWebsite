@@ -240,25 +240,38 @@ body {
   margin: 10px 0 0 0;
 }
 
-.skills-container {
+.skills-section {
+  display: flex;
+  flex-direction: column;
+}
+.skills-section h2 {
+  text-align: center;
+  font-family: "sonderregular";
+  font-weight: lighter;
+  font-size: 4em;
+}
+.skills-section .skills-container {
   position: relative;
   display: flex;
-  border: 1px solid #1b4242;
   justify-content: space-evenly;
 }
-.skills-container .skill-info {
+.skills-section .skills-container .skill-info {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.skills-container .skill-info .skill {
+.skills-section .skills-container .skill-info p {
+  color: white;
+  font-size: 1.5em;
+}
+.skills-section .skills-container .skill-info .skill {
   position: relative;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: conic-gradient(#1b4242 0% 75%, #e0e0e0 0% 100%);
+  background: conic-gradient(#1b4242 0% calc(1% * var(--percent)), #e0e0e0 calc(1% * var(--percent)) 100%);
 }
-.skills-container .skill-info .skill span.skill-label {
+.skills-section .skills-container .skill-info .skill span.skill-label {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -267,7 +280,7 @@ body {
   font-weight: 400;
   color: #333;
 }
-.skills-container .skill-info .skill span.skill-label:before {
+.skills-section .skills-container .skill-info .skill span.skill-label:before {
   content: "";
   position: absolute;
   width: 80px;

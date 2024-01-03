@@ -1,48 +1,63 @@
-.skills-container {
-	position: relative;
+.skills-section {
 	display: flex;
-	border: 1px solid #1b4242;
-	justify-content: space-evenly;
+	flex-direction: column;
 
-	.skill-info {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
-		.skill {
-			position: relative;
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-			background: conic-gradient(
-			  #1b4242 0% 75%, 
-			  #e0e0e0 0% 100% 
-			);
-		
-			span.skill-label {
-			  position: absolute;
-			  top: 50%;
-			  left: 50%;
-			  transform: translate(-50%, -50%);
-			  font-size: 1.3em;
-			  font-weight: 400;
-			  color: #333;
-		
-			  &:before {
-				content: "";
-				position: absolute;
-				width: 80px; 
-				height: 80px;
-				background-color: #e0e0e0; 
-				border-radius: 50%;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				z-index: -1; 
-			  }
-			}
-		  }
+	h2 {
+		text-align: center;
+		font-family: 'sonderregular';
+		font-weight: lighter;
+		font-size: 4em;
 	}
-  
-	
-  }
+
+	.skills-container {
+		position: relative;
+		display: flex;
+		justify-content: space-evenly;
+
+		.skill-info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			p {
+				color: white;
+				font-size: 1.5em;
+			}
+
+			.skill {
+				position: relative;
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background: conic-gradient(#1b4242 0% calc(1% * var(--percent)),
+						#e0e0e0 calc(1% * var(--percent)) 100%);
+
+				span.skill-label {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					font-size: 1.3em;
+					font-weight: 400;
+					color: #333;
+
+					&:before {
+						content: "";
+						position: absolute;
+						width: 80px;
+						height: 80px;
+						background-color: #e0e0e0;
+						border-radius: 50%;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						z-index: -1;
+					}
+				}
+			}
+		}
+
+
+	}
+
+}
