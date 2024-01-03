@@ -1,12 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #92bfaf;
-  background: linear-gradient(140deg, #92bfaf 0%, #4c7a69 55%, #1b4242 100%); }
+  font-family: "Poppins", sans-serif;
+  background: rgb(146, 191, 175);
+  background: linear-gradient(140deg, rgb(146, 191, 175) 0%, rgb(76, 122, 105) 55%, rgb(27, 66, 66) 100%);
+}
 
 @media (min-width: 992px) {
   .custom-navbar {
@@ -15,141 +17,225 @@ body {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50px;
-    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
     z-index: 1000;
     width: auto;
     margin: 20px auto;
     background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 10px 1px rgba(9, 38, 53, 0.15); }
-    .custom-navbar .navbar-nav {
-      display: flex;
-      justify-content: space-around; }
-      .custom-navbar .navbar-nav .nav-item {
-        font-size: 1.5em;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        margin: 0 0.5em; }
-        .custom-navbar .navbar-nav .nav-item .nav-link, .custom-navbar .navbar-nav .nav-item .active {
-          color: #092635 !important; } }
-
+    box-shadow: 0 0 10px 1px rgba(9, 38, 53, 0.15);
+  }
+  .custom-navbar .navbar-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .custom-navbar .navbar-nav .nav-item {
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 0 0.5em;
+  }
+  .custom-navbar .navbar-nav .nav-item .nav-link, .custom-navbar .navbar-nav .nav-item .active {
+    color: rgb(9, 38, 53) !important;
+  }
+}
 .header {
-  font-family: 'SonderRegular', serif;
+  font-family: "SonderRegular", serif;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 9rem 0 5rem;
-  flex-direction: column; }
-  .header h1 {
-    color: white;
-    padding: 2%;
-    font-size: 9em; }
-  .header h3 {
-    margin-top: -1%;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-weight: 200;
-    font-size: 1.5em; }
+  flex-direction: column;
+}
+.header h1 {
+  color: white;
+  padding: 2%;
+  font-size: 9em;
+}
+.header .h3-index {
+  margin-top: 1%;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 200;
+  font-size: 1.5em;
+}
+@media screen and (min-width: 768px) {
+  .header .h3-index {
+    font-size: 1.8em;
+  }
+}
+
+.header-about {
+  display: flex;
+  flex-direction: column;
+}
+.header-about .row {
+  height: 50vh;
+}
+.header-about .row .col-lg-5 .about-img {
+  height: 100%;
+}
+.header-about .row .col-lg-5 .about-img .img-about {
+  border-radius: 35% 35% 0 0;
+  width: 80%;
+  height: 100%;
+}
+.header-about .row .col-lg-7 {
+  height: 100%;
+  margin: 0;
+}
+.header-about .row .col-lg-7 .about-info {
+  text-align: left;
+  color: white;
+}
+.header-about .row .col-lg-7 .about-info h2 {
+  font-size: 3.5em;
+}
+.header-about .row .col-lg-7 .about-info p {
+  font-family: "poppins";
+  font-weight: 3200;
+}
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 100;
   font-style: normal;
-  src: url("../font/Poppins/Poppins-Thin.ttf") format("truetype"); }
-
+  src: url("../font/Poppins/Poppins-Thin.ttf") format("truetype");
+}
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 200;
   font-style: normal;
-  src: url("../font/Poppins/Poppins-ExtraLight.ttf") format("truetype"); }
-
+  src: url("../font/Poppins/Poppins-ExtraLight.ttf") format("truetype");
+}
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 300;
   font-style: normal;
-  src: url("../font/Poppins/Poppins-Light.ttf") format("truetype"); }
-
+  src: url("../font/Poppins/Poppins-Light.ttf") format("truetype");
+}
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 400;
   font-style: normal;
-  src: url("../font/Poppins/Poppins-Regular.ttf") format("truetype"); }
-
+  src: url("../font/Poppins/Poppins-Regular.ttf") format("truetype");
+}
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 500;
   font-style: normal;
-  src: url("../font/Poppins/Poppins-Medium.ttf") format("truetype"); }
-
+  src: url("../font/Poppins/Poppins-Medium.ttf") format("truetype");
+}
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 600;
   font-style: normal;
-  src: url("../font/Poppins/Poppins-SemiBold.ttf") format("truetype"); }
-
+  src: url("../font/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 700;
   font-style: normal;
-  src: url("../font/Poppins/Poppins-Bold.ttf") format("truetype"); }
-
+  src: url("../font/Poppins/Poppins-Bold.ttf") format("truetype");
+}
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 800;
   font-style: normal;
-  src: url("../font/Poppins/Poppins-ExtraBold.ttf") format("truetype"); }
-
+  src: url("../font/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+}
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 900;
   font-style: normal;
-  src: url("../font/Poppins/Poppins-Black.ttf") format("truetype"); }
-
+  src: url("../font/Poppins/Poppins-Black.ttf") format("truetype");
+}
 @font-face {
-  font-family: 'SonderRegular';
+  font-family: "SonderRegular";
   src: url("../font/sonder-regular-free-font/SonderRegular/SonderRegular.otf") format("opentype");
   font-weight: normal;
-  font-style: normal; }
-
+  font-style: normal;
+}
 .cards-index .card {
   background-color: #1b4242;
-  border-radius: 25px; }
-  .cards-index .card .card-img {
-    width: 88%;
-    margin: 6%;
-    border-radius: 20px; }
-  .cards-index .card .card-body {
-    margin: 0 0 0 10px; }
-    .cards-index .card .card-body .card-title {
-      font-size: 1.6em;
-      margin-bottom: 25px;
-      color: white; }
-    .cards-index .card .card-body .card-tags {
-      display: flex; }
-      .cards-index .card .card-body .card-tags p {
-        font-size: 0.8em;
-        margin-right: 10px;
-        background-color: #cdeee2;
-        padding: 5px 12px;
-        border-radius: 15px; }
-        .cards-index .card .card-body .card-tags p:hover {
-          color: white;
-          background-color: #1b4242;
-          transition: all 0.2s ease-in-out; }
+  border-radius: 25px;
+}
+.cards-index .card .card-img {
+  width: 88%;
+  margin: 6%;
+  border-radius: 20px;
+}
+.cards-index .card .card-body {
+  margin: 0 0 0 10px;
+}
+.cards-index .card .card-body .card-title {
+  font-size: 1.6em;
+  margin-bottom: 25px;
+  color: white;
+}
+.cards-index .card .card-body .card-tags {
+  display: flex;
+}
+.cards-index .card .card-body .card-tags p {
+  font-size: 0.8em;
+  margin-right: 10px;
+  background-color: #cdeee2;
+  padding: 5px 12px;
+  border-radius: 15px;
+}
+.cards-index .card .card-body .card-tags p:hover {
+  color: white;
+  background-color: #1b4242;
+  transition: all 0.2s ease-in-out;
+}
 
 .main .line-x {
   width: 80%;
   background-color: white;
   height: 2px;
-  margin: 100px auto; }
-
-.main h2 {
+  margin: 100px auto;
+}
+.main .h2-index {
   text-align: center;
   margin: 1.8em 0 1em;
-  font-size: 3em;
-  font-family: 'sonderregular', sans-serif;
-  color: white; }
+  font-size: 4em;
+  font-family: "sonderregular", sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  color: white;
+}
 
-.footer-index {
-  margin: 100px auto; }
+.footer {
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.footer .footer-copyright {
+  color: white;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2em;
+}
+.footer .footer-links {
+  width: 55%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer .footer-links .footer-connect, .footer .footer-links .footer-contact {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.footer .footer-links .footer-connect h6, .footer .footer-links .footer-contact h6 {
+  font-size: 1.2em;
+}
+.footer .footer-links .footer-connect a, .footer .footer-links .footer-contact a {
+  text-decoration: none;
+  color: white;
+  margin: 10px 0 0 0;
+}/*# sourceMappingURL=style.css.map */
