@@ -40,7 +40,7 @@ body {
   }
 }
 .header {
-  font-family: "SonderRegular", serif;
+  font-family: "andora", serif;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ body {
 .header h1 {
   color: white;
   padding: 2%;
-  font-size: 9em;
+  font-size: 8em;
 }
 .header .h3-index {
   margin-top: 1%;
@@ -91,7 +91,7 @@ body {
   color: white;
 }
 .header-about .row .col-lg-7 .about-info h2 {
-  font-size: 3.5em;
+  font-size: 3em;
 }
 .header-about .row .col-lg-7 .about-info p {
   font-family: "poppins";
@@ -158,6 +158,24 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "misttropic";
+  src: url("../font/mist-tropic-font/MistTropicDemo-L3eaD.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "andora";
+  src: url("../font/andora-modern-serif-font/AndoraModernSerif-lgrvw.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mikane";
+  src: url("../font/mikane-jellie-serif-font/MikaneJellieSerif-nRj7V.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .cards-index .card {
   background-color: #1b4242;
   border-radius: 25px;
@@ -201,7 +219,7 @@ body {
   text-align: center;
   margin: 1.8em 0 1em;
   font-size: 4em;
-  font-family: "sonderregular", sans-serif;
+  font-family: "andora", sans-serif;
   font-weight: lighter;
   font-style: normal;
   color: white;
@@ -246,9 +264,9 @@ body {
 }
 .skills-section h2 {
   text-align: center;
-  font-family: "sonderregular";
-  font-weight: lighter;
+  font-family: "andora";
   font-size: 4em;
+  color: white;
 }
 .skills-section .skills-container {
   position: relative;
@@ -263,6 +281,7 @@ body {
 .skills-section .skills-container .skill-info p {
   color: white;
   font-size: 1.5em;
+  font-weight: 200;
 }
 .skills-section .skills-container .skill-info .skill {
   position: relative;
